@@ -1,10 +1,13 @@
 import AnimatedLetters from '../AnimatedLetters'
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import Loader from 'react-loaders'
+import emailjs from '@emailjs/browser'
 import './index.scss'
 
 const Contact = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
+  const refForm = useRef()
 
   useEffect(() => {
     return () => {
@@ -13,6 +16,27 @@ const Contact = () => {
       }, 3000)
     }
   }, [])
+
+  const sendEmail = (e) => {
+    e.preventDefault()
+    emailjs
+      .sendForm(
+        'service_w4fncu6',
+        'template_xbxxyno',
+        refForm.current,
+        'pcx2dK2JQFu4lS_Qu'
+      )
+      .then(
+        () => {
+          alert('Message succesfully sent!')
+          window.location.reload(false)
+        },
+        () => {
+          alert('Failed to send the message, please try again!')
+        }
+      )
+  }
+  const position = [50.4547, 30.5238]
   return (
     <>
       <div className="container contact-page">
@@ -30,15 +54,20 @@ const Contact = () => {
             don't hesitate to contact me using below form either.
           </p>
           <div className="contact-form">
-            <form>
+            <form ref={refForm} onSubmit={sendEmail}>
               <ul>
                 <li className="half">
-                  <input type="text" name="name" placeholder="Name" required />
+                  <input
+                    type="text"
+                    name="from_name"
+                    placeholder="Name"
+                    required
+                  />
                 </li>
                 <li className="half">
                   <input
                     type="email"
-                    name="email"
+                    name="from_email"
                     placeholder="Email"
                     required
                   />
@@ -46,7 +75,7 @@ const Contact = () => {
                 <li>
                   <input
                     type="text"
-                    name="subject"
+                    name="from_subject"
                     placeholder="Subject"
                     required
                   />
@@ -64,6 +93,30 @@ const Contact = () => {
               </ul>
             </form>
           </div>
+        </div>
+        <div className="info-map">
+          Maks Stelmakh
+          <br />
+          Ukraine,
+          <br />
+          Kyiv 03134
+          <br />
+          <a href="mailto:maks.stelmakh2019@gmail.com">
+            maks.stelmakh2019@gmail.com
+          </a>
+        </div>
+        <div className="map-wrap">
+          <MapContainer center={position} zoom={13} scrollWheelZoom={true}>
+            <TileLayer
+              attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            />
+            <Marker position={position}>
+              <Popup>
+                Maxim lives here, I accept invitations for coffee ;)
+              </Popup>
+            </Marker>
+          </MapContainer>
         </div>
       </div>
       <Loader type="pacman" />

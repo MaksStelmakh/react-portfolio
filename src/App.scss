@@ -36,3 +36,14 @@ textarea {
   animation: fadeOut 1s 1s;
   animation-fill-mode: forwards;
 }
+
+.pacman {
+  div:nth-child(-n + 2) {
+    border-top: 25px solid #ffd700 !important;
+    border-left: 25px solid #ffd700 !important;
+    border-bottom: 25px solid #ffd700 !important;
+  }
+  div:nth-child(n + 3) {
+    background-color: #ffd700 !important;
+  }
+}
