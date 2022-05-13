@@ -1,6 +1,8 @@
 import AnimatedLetters from '../AnimatedLetters'
 import { useState, useEffect, useRef } from 'react'
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
+import { Notyf } from 'notyf'
+import 'notyf/notyf.min.css'
 import Loader from 'react-loaders'
 import emailjs from '@emailjs/browser'
 import './index.scss'
@@ -8,7 +10,13 @@ import './index.scss'
 const Contact = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
   const refForm = useRef()
-
+  const notyf = new Notyf({
+    duration: 2000,
+    position: {
+      x: 'center',
+      y: 'top',
+    },
+  })
   useEffect(() => {
     return () => {
       setTimeout(() => {
@@ -28,11 +36,13 @@ const Contact = () => {
       )
       .then(
         () => {
-          alert('Message succesfully sent!')
-          window.location.reload(false)
+          notyf.success('Message succesfully sent!')
+          setTimeout(() => {
+            window.location.reload(false)
+          }, 2000)
         },
         () => {
-          alert('Failed to send the message, please try again!')
+          notyf.error('Failed to send the message, please try again!')
         }
       )
   }
@@ -84,6 +94,7 @@ const Contact = () => {
                   <textarea
                     placeholder="Message"
                     name="message"
+                    className="textarea"
                     required
                   ></textarea>
                 </li>
@@ -93,17 +104,6 @@ const Contact = () => {
               </ul>
             </form>
           </div>
-        </div>
-        <div className="info-map">
-          Maks Stelmakh
-          <br />
-          Ukraine,
-          <br />
-          Kyiv 03134
-          <br />
-          <a href="mailto:maks.stelmakh2019@gmail.com">
-            maks.stelmakh2019@gmail.com
-          </a>
         </div>
         <div className="map-wrap">
           <MapContainer center={position} zoom={13} scrollWheelZoom={true}>
@@ -117,6 +117,17 @@ const Contact = () => {
               </Popup>
             </Marker>
           </MapContainer>
+        </div>
+        <div className="info-map">
+          Maks Stelmakh
+          <br />
+          Ukraine,
+          <br />
+          Kyiv 03134
+          <br />
+          <a href="mailto:maks.stelmakh2019@gmail.com">
+            maks.stelmakh2019@gmail.com
+          </a>
         </div>
       </div>
       <Loader type="pacman" />

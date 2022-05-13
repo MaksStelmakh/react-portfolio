@@ -97,6 +97,11 @@
   animation-fill-mode: forwards;
 }
 
+.textarea {
+  resize: none;
+  width: 100% !important;
+}
+
 .info-map {
   position: absolute;
   background: #000;
@@ -117,5 +122,26 @@
     font-size: 16px;
     color: #ffd700;
     text-decoration: none;
+  }
+}
+
+@media (max-width: 1400px) {
+  .info-map {
+    right: 20%;
+  }
+}
+
+@media (max-width: 960px) {
+  .info-map {
+    position: static;
+    margin: 0 auto;
+    width: 70%;
+    text-align: center;
+    min-height: 100px;
+    margin-bottom: 150px;
+
+    a {
+      font-size: 14px;
+    }
   }
 }

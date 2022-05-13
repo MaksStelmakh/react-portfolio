@@ -6,6 +6,7 @@
     transform: translateY(-50%);
     width: 40%;
     max-height: 90%;
+    z-index: 2;
   }
   h1 {
     color: #fff;
@@ -76,6 +77,40 @@
     &:hover {
       background-color: #ffd700;
       color: #333;
+    }
+  }
+}
+
+@media (max-width: 1030px) {
+  .home-page {
+    h1 {
+      font-size: 45px;
+    }
+  }
+}
+
+@media (max-width: 905px) {
+  .home-page {
+    .text-zone {
+      width: 80%;
+
+      h1 {
+        font-size: 40px;
+
+        img {
+          width: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .home-page {
+    .text-zone {
+      h1 {
+        font-size: 30px;
+      }
     }
   }
 }

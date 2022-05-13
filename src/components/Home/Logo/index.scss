@@ -35,3 +35,24 @@
   stroke: #ffd700;
   stroke-width: 10px;
 }
+
+@media (max-width: 1030px) {
+  .logo-container {
+    width: 300px;
+    top: 100px;
+  }
+}
+
+@media (max-width: 905px) {
+  .logo-container {
+    width: 200px;
+    top: 200px;
+  }
+}
+
+@media (max-width: 450px) {
+  .logo-container {
+    width: 150px;
+    top: 250px;
+  }
+}

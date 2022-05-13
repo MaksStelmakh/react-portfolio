@@ -1,4 +1,5 @@
 import { Link, NavLink } from 'react-router-dom'
+import { useState } from 'react'
 import './index.scss'
 import LogoS from '../../assets/images/logo-s.png'
 import LogoSubtitle from '../../assets/images/logo_sub.png'
@@ -12,8 +13,35 @@ import {
 } from '@fortawesome/free-brands-svg-icons'
 
 const Sidebar = () => {
+  const [active, setActive] = useState(false)
   return (
     <div className="nav-bar">
+      <div
+        className="mobile-nav-bar"
+        style={{
+          transform: `${active ? 'translateX(0)' : 'translateX(-110%)'}`,
+        }}
+      >
+        <NavLink exact="true" activeclassname="active" to="/">
+          <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
+        </NavLink>
+        <NavLink
+          exact="true"
+          activeclassname="active"
+          className="about-link"
+          to="/about"
+        >
+          <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
+        </NavLink>
+        <NavLink
+          exact="true"
+          activeclassname="active"
+          className="contact-link"
+          to="/contact"
+        >
+          <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
+        </NavLink>
+      </div>
       <Link className="logo" to="/">
         <img src={LogoS} alt="logo" />
         <img className="sub-logo" src={LogoSubtitle} alt="stelmakh" />
@@ -39,6 +67,12 @@ const Sidebar = () => {
           <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
         </NavLink>
       </nav>
+      <div className="hamburger">
+        <input id="menu-toggle" type="checkbox" />
+        <label className="menu-button-container" htmlFor="menu-toggle">
+          <div onClick={() => setActive(!active)} className="menu-button"></div>
+        </label>
+      </div>
       <ul>
         <li>
           <a
