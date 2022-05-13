@@ -21,22 +21,32 @@ const MyWorks = () => {
           <div className="element">
             <div className="flip">
               <div className="front">
-                <img src={Freedom} />
+                <img src={Freedom} alt="Project" />
               </div>
               <div className="back">
-                <img src={Freedom} />
+                <img src={Freedom} alt="Project" />
                 <div className="back-text">
                   <h2>3DFREEDOM</h2>
                   <p>
-                    hange it with appropriate styles. Learn more:
-                    https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/anchor-is-valid.md
-                    jsx-a11y/anchor-is-valid
+                    My first project of a mobile-first adaptive multi-page web
+                    site for a 3d modeling company.
                   </p>
-                  <a href="#" type="button">
+                  <p>Using: HTML5 - SCSS3 - JS - SASS</p>
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://github.com/Tsimura/team-1"
+                    type="button"
+                  >
                     <FontAwesomeIcon icon={faGithub} color="#FFFFFF" />
                     GitHub
                   </a>
-                  <a href="#" type="button">
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://tsimura.github.io/team-1/"
+                    type="button"
+                  >
                     <FontAwesomeIcon icon={faSatelliteDish} color="#FFFFFF" />
                     Live
                   </a>
@@ -47,22 +57,33 @@ const MyWorks = () => {
           <div className="element">
             <div className="flip">
               <div className="front">
-                <img src={Filmoteka} />
+                <img src={Filmoteka} alt="Project" />
               </div>
               <div className="back">
-                <img src={Filmoteka} />
+                <img src={Filmoteka} alt="Project" />
                 <div className="back-text">
-                  <h2>Freedom</h2>
+                  <h2>Filmoteka</h2>
                   <p>
-                    hange it with appropriate styles. Learn more:
-                    https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/anchor-is-valid.md
-                    jsx-a11y/anchor-is-valid
+                    Website with information about popular films, beautiful
+                    design and with the ability to search and save your favorite
+                    movies.
                   </p>
-                  <a href="#" type="button">
+                  <p>Using: HTML5 - SCSS3 - SASS - JS - API</p>
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://github.com/Tsimura/team-1-js"
+                    type="button"
+                  >
                     <FontAwesomeIcon icon={faGithub} color="#FFFFFF" />
                     GitHub
                   </a>
-                  <a href="#" type="button">
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://tsimura.github.io/team-1-js/"
+                    type="button"
+                  >
                     <FontAwesomeIcon icon={faSatelliteDish} color="#FFFFFF" />
                     Live
                   </a>
@@ -73,22 +94,32 @@ const MyWorks = () => {
           <div className="element">
             <div className="flip">
               <div className="front">
-                <img src={Todo} />
+                <img src={Todo} alt="Project" />
               </div>
               <div className="back">
-                <img src={Todo} />
+                <img src={Todo} alt="Project" />
                 <div className="back-text">
-                  <h2>Freedom</h2>
+                  <h2>Todo List</h2>
                   <p>
-                    hange it with appropriate styles. Learn more:
-                    https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/anchor-is-valid.md
-                    jsx-a11y/anchor-is-valid
+                    Todo list using TypeScript and React beautiful dnd library
+                    for dragging components.
                   </p>
-                  <a href="#" type="button">
+                  <p>Using: HTML5 - CSS3 - React - TypeScript</p>
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://github.com/MaksStelmakh/to-do-list-typescript"
+                    type="button"
+                  >
                     <FontAwesomeIcon icon={faGithub} color="#FFFFFF" />
                     GitHub
                   </a>
-                  <a href="#" type="button">
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://maksstelmakh.github.io/to-do-list-typescript/"
+                    type="button"
+                  >
                     <FontAwesomeIcon icon={faSatelliteDish} color="#FFFFFF" />
                     Live
                   </a>
@@ -99,22 +130,32 @@ const MyWorks = () => {
           <div className="second-element">
             <div className="flip">
               <div className="front">
-                <img src={Registrtration} />
+                <img src={Registrtration} alt="Project" />
               </div>
               <div className="back">
-                <img src={Registrtration} />
+                <img src={Registrtration} alt="Project" />
                 <div className="back-text">
-                  <h2>Freedom</h2>
+                  <h2>Phonebook</h2>
                   <p>
-                    hange it with appropriate styles. Learn more:
-                    https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/anchor-is-valid.md
-                    jsx-a11y/anchor-is-valid
+                    Phonebook for storing contacts with the ability to register
+                    users.
                   </p>
-                  <a href="#" type="button">
+                  <p>Using: HTML5 - CSS3 - ReactJs - React Router - Redux</p>
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://github.com/MaksStelmakh/goit-react-hw-08-phonebook"
+                    type="button"
+                  >
                     <FontAwesomeIcon icon={faGithub} color="#FFFFFF" />
                     GitHub
                   </a>
-                  <a href="#" type="button">
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://phonebook-with-registration.netlify.app"
+                    type="button"
+                  >
                     <FontAwesomeIcon icon={faSatelliteDish} color="#FFFFFF" />
                     Live
                   </a>
@@ -125,22 +166,32 @@ const MyWorks = () => {
           <div className="second-element">
             <div className="flip">
               <div className="front">
-                <img src={Quiz} />
+                <img src={Quiz} alt="Project" />
               </div>
               <div className="back">
-                <img src={Quiz} />
+                <img src={Quiz} alt="Project" />
                 <div className="back-text">
-                  <h2>Freedom</h2>
+                  <h2>Quiz game</h2>
                   <p>
-                    hange it with appropriate styles. Learn more:
-                    https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/anchor-is-valid.md
-                    jsx-a11y/anchor-is-valid
+                    Quiz game with the ability to choose the number of questions
+                    and time.
                   </p>
-                  <a href="#" type="button">
+                  <p>Using: HTML5 - CSS3 - ReactJs</p>
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://github.com/MaksStelmakh/study-by-tests"
+                    type="button"
+                  >
                     <FontAwesomeIcon icon={faGithub} color="#FFFFFF" />
                     GitHub
                   </a>
-                  <a href="#" type="button">
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://maksstelmakh.github.io/study-by-tests/"
+                    type="button"
+                  >
                     <FontAwesomeIcon icon={faSatelliteDish} color="#FFFFFF" />
                     Live
                   </a>
@@ -151,22 +202,32 @@ const MyWorks = () => {
           <div className="second-element">
             <div className="flip">
               <div className="front">
-                <img src={InfoMovie} />
+                <img src={InfoMovie} alt="Project" />
               </div>
               <div className="back">
-                <img src={InfoMovie} />
+                <img src={InfoMovie} alt="Project" />
                 <div className="back-text">
-                  <h2>Freedom</h2>
+                  <h2>React movies</h2>
                   <p>
-                    hange it with appropriate styles. Learn more:
-                    https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/anchor-is-valid.md
-                    jsx-a11y/anchor-is-valid
+                    Search for information, reviews and actors for popular
+                    movies
                   </p>
-                  <a href="#" type="button">
+                  <p>Using HTML5 - SCSS3 - ReactJs - React Router</p>
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://github.com/MaksStelmakh/goit-react-hw-05-movies"
+                    type="button"
+                  >
                     <FontAwesomeIcon icon={faGithub} color="#FFFFFF" />
                     GitHub
                   </a>
-                  <a href="#" type="button">
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://malsstelmakh-react-search-movies.netlify.app"
+                    type="button"
+                  >
                     <FontAwesomeIcon icon={faSatelliteDish} color="#FFFFFF" />
                     Live
                   </a>

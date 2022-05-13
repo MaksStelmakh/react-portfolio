@@ -138,6 +138,10 @@
 }
 
 @media (max-width: 960px) {
+  .container.my-works-page {
+    height: 100%;
+    overflow: scroll;
+  }
   .container.contact-page {
     display: flex;
     flex-direction: column;
