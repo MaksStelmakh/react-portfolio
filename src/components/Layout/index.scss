@@ -44,7 +44,8 @@
 }
 
 .container.contact-page,
-.container.about-page {
+.container.about-page,
+.container.my-works-page {
   .text-zone {
     position: absolute;
     left: 10%;
@@ -114,6 +115,12 @@
     &:hover {
       color: #fff;
     }
+  }
+}
+
+.container.my-works-page {
+  .text-zone {
+    top: 20%;
   }
 }
 

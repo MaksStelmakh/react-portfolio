@@ -4,7 +4,12 @@ import './index.scss'
 import LogoS from '../../assets/images/logo-s.png'
 import LogoSubtitle from '../../assets/images/logo_sub.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
+import {
+  faEnvelope,
+  faHome,
+  faUser,
+  faGlobe,
+} from '@fortawesome/free-solid-svg-icons'
 import {
   faLinkedin,
   faGithub,
@@ -19,7 +24,7 @@ const Sidebar = () => {
       <div
         className="mobile-nav-bar"
         style={{
-          transform: `${active ? 'translateX(0)' : 'translateX(-110%)'}`,
+          transform: `${active ? 'translateX(0)' : 'translateX(-150%)'}`,
         }}
       >
         <NavLink exact="true" activeclassname="active" to="/">
@@ -32,6 +37,14 @@ const Sidebar = () => {
           to="/about"
         >
           <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
+        </NavLink>
+        <NavLink
+          exact="true"
+          activeclassname="active"
+          className="work-link"
+          to="/works"
+        >
+          <FontAwesomeIcon icon={faGlobe} color="#4d4d4e" />
         </NavLink>
         <NavLink
           exact="true"
@@ -57,6 +70,14 @@ const Sidebar = () => {
           to="/about"
         >
           <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
+        </NavLink>
+        <NavLink
+          exact="true"
+          activeclassname="active"
+          className="work-link"
+          to="/works"
+        >
+          <FontAwesomeIcon icon={faGlobe} color="#4d4d4e" />
         </NavLink>
         <NavLink
           exact="true"
