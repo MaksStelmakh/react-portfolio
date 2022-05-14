@@ -41,12 +41,12 @@ const About = () => {
           </p>
           <p>
             I'm quietly confident, naturally curious, and perpetually working on
-            improving my chops one design problem at a time.
+            improving my chops one problem at a time.
           </p>
           <p>
-            If I need to define myself in one sentence that would be a family
-            person, father of a beautiful daughter, a sports fanatic,
-            photography enthusiast, and tech-obsessed!!!
+            If I need to define myself in one sentence that would be a active
+            person,constantly improving by learning something new , a sports
+            fanatic, and tech-obsessed!!!
           </p>
         </div>
         <div className="stage-cube-cont">

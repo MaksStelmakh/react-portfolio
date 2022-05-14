@@ -1,15 +1,6 @@
 import './index.scss'
 import { useState, useEffect } from 'react'
 import Loader from 'react-loaders'
-import Freedom from '../../assets/images/my-projects/3dfreedom.png'
-import Filmoteka from '../../assets/images/my-projects/filmoteka.png'
-import Todo from '../../assets/images/my-projects/to-do-list.png'
-import Registrtration from '../../assets/images/my-projects/registration.png'
-import Quiz from '../../assets/images/my-projects/React Quiz.png'
-import InfoMovie from '../../assets/images/my-projects/movies-info.png'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub } from '@fortawesome/free-brands-svg-icons'
-import { faSatelliteDish } from '@fortawesome/free-solid-svg-icons'
 import AnimatedLetters from '../AnimatedLetters'
 
 const MyWorks = () => {
