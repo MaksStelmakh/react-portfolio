@@ -282,17 +282,18 @@ const MyWorks = () => {
 
               <div></div>
 
-              <h2>React filmoteka</h2>
+              <h2>Chess Game</h2>
 
               <p>
-                Search for information, reviews and actors for popular movies
-                Using HTML5 - SCSS3 - ReactJs - React Router
+                Chess game with a beautiful design and the ability to play
+                online with your friends. Using HTML5 - CSS3 - ReactJs - React
+                Router - Firebase
               </p>
 
               <a
                 target="_blank"
                 rel="noreferrer"
-                href="https://malsstelmakh-react-search-movies.netlify.app"
+                href="https://chess-game-2022-lpg.netlify.app"
                 title="Learn More"
               >
                 Live
