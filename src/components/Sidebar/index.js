@@ -8,7 +8,8 @@ import {
   faEnvelope,
   faHome,
   faUser,
-  faGlobe,
+  faSuitcase,
+  faGear,
 } from '@fortawesome/free-solid-svg-icons'
 import {
   faLinkedin,
@@ -40,11 +41,19 @@ const Sidebar = () => {
         </NavLink>
         <NavLink
           exact="true"
+          activeclassname="skills"
+          className="skills-link"
+          to="/skills"
+        >
+          <FontAwesomeIcon icon={faGear} color="#4d4d4e" />
+        </NavLink>
+        <NavLink
+          exact="true"
           activeclassname="active"
           className="work-link"
           to="/works"
         >
-          <FontAwesomeIcon icon={faGlobe} color="#4d4d4e" />
+          <FontAwesomeIcon icon={faSuitcase} color="#4d4d4e" />
         </NavLink>
         <NavLink
           exact="true"
@@ -73,11 +82,19 @@ const Sidebar = () => {
         </NavLink>
         <NavLink
           exact="true"
+          activeclassname="skills"
+          className="skills-link"
+          to="/skills"
+        >
+          <FontAwesomeIcon icon={faGear} color="#4d4d4e" />
+        </NavLink>
+        <NavLink
+          exact="true"
           activeclassname="active"
           className="work-link"
           to="/works"
         >
-          <FontAwesomeIcon icon={faGlobe} color="#4d4d4e" />
+          <FontAwesomeIcon icon={faSuitcase} color="#4d4d4e" />
         </NavLink>
         <NavLink
           exact="true"
