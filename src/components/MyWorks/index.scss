@@ -131,7 +131,6 @@ figure div {
   background-position: center !important;
   background-repeat: no-repeat !important;
 }
-
 .front div {
   background: url('../../assets/images/my-projects/filmoteka.png');
 }
@@ -388,12 +387,6 @@ figure a:hover {
   }
   100% {
     transform: rotateY(360deg) rotateX(0deg);
-  }
-}
-
-@keyframes unrotate {
-  0% {
-    transform: rotateY(0deg) rotateX(0deg);
   }
 }
 

@@ -1,6 +1,5 @@
 #svg-container {
   display: none;
-  background-color: inherit;
 }
 
 #myCanvas {
@@ -11,4 +10,48 @@
   margin-left: 50%;
   margin-top: auto;
   margin-bottom: auto;
+}
+
+@media (max-width: 895px) {
+  #myCanvas {
+    margin-top: 70%;
+    left: 50%;
+    right: 50%;
+    width: 80%;
+    overflow: auto;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    margin-left: 6%;
+    z-index: -1;
+  }
+}
+
+@media (max-width: 740px) {
+  #myCanvas {
+    margin-top: 90%;
+  }
+}
+
+@media (max-width: 565px) {
+  #myCanvas {
+    margin-top: 110%;
+    margin-left: 10%;
+  }
+}
+
+@media (max-width: 480px) {
+  #myCanvas {
+    margin-top: 140%;
+    width: 70%;
+    margin-left: 15%;
+  }
+}
+
+@media (max-width: 400px) {
+  #myCanvas {
+    left: 20%;
+    margin-top: 160%;
+    width: 68%;
+    margin-left: 46%;
+  }
 }

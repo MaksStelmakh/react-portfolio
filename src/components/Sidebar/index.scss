@@ -76,6 +76,16 @@
         content: 'CONTACT';
       }
     }
+    a.work-link {
+      &:after {
+        content: 'WORKS';
+      }
+    }
+    a.skills-link {
+      &:after {
+        content: 'SKILLS';
+      }
+    }
 
     a.active {
       svg {

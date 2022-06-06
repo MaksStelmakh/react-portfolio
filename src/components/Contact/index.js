@@ -59,7 +59,7 @@ const Contact = () => {
             />
           </h1>
           <p>
-            I am interested in freelance opportunities - especially ambitious or
+            I'm interested in hiring opportunities - especially ambitious or
             large projects. However, if you have other request or question,
             don't hesitate to contact me using below form either.
           </p>
@@ -126,7 +126,9 @@ const Contact = () => {
           Kyiv 03134
           <br />
           <a href="mailto:maks.stelmakh2019@gmail.com">
-            maks.stelmakh2019@gmail.com
+            maks.stelmakh2019
+            <wbr />
+            @gmail.com
           </a>
         </div>
       </div>

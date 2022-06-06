@@ -165,8 +165,11 @@
       position: static;
       transform: translateY(0);
       margin: 80px auto 50px auto;
-      height: 500px;
+      height: 610px;
 
+      h1 {
+        font-size: 50px;
+      }
       .contact-form {
         height: 100%;
       }
@@ -193,6 +196,30 @@
       min-height: 0;
       transform: translateX(0);
       margin-top: 115px;
+      margin-left: 90px;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .container.contact-page {
+    .text-zone {
+      width: 80%;
+      position: static;
+      transform: translateY(0);
+      margin: 80px auto 50px auto;
+      height: 640px;
+
+      h1 {
+        font-size: 40px;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .container.about-page {
+    .text-zone {
       margin-left: 50px;
     }
   }
@@ -225,6 +252,52 @@
     .text-zone {
       h1 {
         font-size: 50px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1270px) {
+  .container.skills-page {
+    .text-zone {
+      h1 {
+        font-size: 40px;
+      }
+
+      p {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+@media (max-width: 895px) {
+  .container.skills-page {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    overflow: scroll;
+
+    .text-zone {
+      position: static;
+      width: 80%;
+      min-height: 0;
+      transform: translateX(0);
+      margin-top: 115px;
+      margin-left: 50px;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .container.skills-page {
+    .text-zone {
+      h1 {
+        font-size: 30px;
+      }
+
+      p {
+        font-size: 10px;
       }
     }
   }
