@@ -12,13 +12,10 @@
   min-width: 10px;
   display: inline-block;
   animation-fill-mode: both;
-  transition: 1s ease;
-  -moz-transition: 1s ease;
-  -o-transition: 1s ease;
 
   &:hover {
-    color: #ffd700;
     animation: rubberBand 1s;
+    color: #ffd700;
   }
 }
 
