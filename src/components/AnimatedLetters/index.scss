@@ -1,9 +1,13 @@
 .text-animate {
   display: inline-block;
   opacity: 0;
+  -webkit-animation: bounceIn;
   animation: bounceIn;
+  -webkit-animation-duration: 1s;
   animation-duration: 1s;
+  -webkit-animation-delay: 1s;
   animation-delay: 1s;
+  -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   min-width: 10px;
 }
@@ -11,16 +15,19 @@
 .text-animate-hover {
   min-width: 10px;
   display: inline-block;
+  -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+}
 
-  &:hover {
-    animation: rubberBand 1s;
-    color: #ffd700;
-  }
+.text-animate-hover:hover {
+  -webkit-animation: rubberBand 1s !important;
+  animation: rubberBand 1s !important;
+  color: #ffd700 !important;
 }
 
 @for $i from 1 through 40 {
   .text-animate._#{$i} {
     animation-delay: #{$i / 10}s;
+    -webkit-animation-delay: #{$i / 10}s;
   }
 } ;
