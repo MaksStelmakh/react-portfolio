@@ -52,8 +52,8 @@ const Skills = () => {
             Talented developer in front-end development including technologies
             like <span>HTML5</span>, <span>CSS3</span>, <span>JavaScript</span>,{' '}
             <span>TypeScript</span>, <span>React</span>, <span>Redux</span>,{' '}
-            <span>SCSS</span>, <span>Parcel</span>, <span>Gulp</span>,{' '}
-            <span>Git</span>, <span>Figma</span> etc.
+            <span>SCSS</span>, <span>NodeJs</span>, <span>NoSQL</span>,{' '}
+            <span>MongoDB</span>, <span>Git</span> etc.
           </p>
           <p>
             I am a persistent developer who solves any problem that may arise in
