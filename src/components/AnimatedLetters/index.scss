@@ -17,17 +17,22 @@
   display: inline-block;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
 }
 
 .text-animate-hover:hover {
-  -webkit-animation: rubberBand 1s !important;
-  animation: rubberBand 1s !important;
-  color: #ffd700 !important;
+  -webkit-animation-name: rubberBand;
+  animation-name: rubberBand;
+  color: #ffd700;
 }
 
 @for $i from 1 through 40 {
   .text-animate._#{$i} {
-    animation-delay: #{$i / 10}s;
     -webkit-animation-delay: #{$i / 10}s;
+    animation-delay: #{$i / 10}s;
   }
 } ;

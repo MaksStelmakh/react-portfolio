@@ -31,7 +31,7 @@ const Home = () => {
     return () => {
       setTimeout(() => {
         setLetterClass('text-animate-hover')
-      }, 4000)
+      }, 5000)
     }
   }, [])
 
@@ -65,7 +65,7 @@ const Home = () => {
             />
           </h1>
           <h2>Full-Stack Developer / Frontend Developer / React Developer</h2>
-          <Link to="/contact" className="flat-button">
+          <Link to="/contact" className="flat-button" id="test">
             CONTACT ME
           </Link>
         </div>
